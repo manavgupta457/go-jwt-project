@@ -5,7 +5,7 @@ import (
 	"github.com/manavgupta457/go-jwt-project/controllers"
 )
 
-func AuthRoutes(incoming Routes *gin.Engine){
+func AuthRoutes(incomingRoutes *gin.Engine) {
 	incomingRoutes.POST("users/signup", controllers.Signup())
 	incomingRoutes.POST("users/login", controllers.Login())
 }
